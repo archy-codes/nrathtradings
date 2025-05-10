@@ -1,3 +1,3 @@
-<div>
-  <h1>THIS IS THE ABOUT US PAGE</h1>
+<div class="">
+  <img alt="" src="">
 </div>

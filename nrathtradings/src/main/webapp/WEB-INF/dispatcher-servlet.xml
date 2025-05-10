@@ -13,7 +13,7 @@
         <!-- Scan the JavaConfig -->
 	<context:component-scan base-package="archy.wiz.nrathtradings" />
 	
-	<mvc:resources location="resources" mapping="/assets/" />
+	<mvc:resources location="/assets/" mapping="/resources/**" />
 	
 	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 	   <property  name="prefix" value="/WEB-INF/views/" />

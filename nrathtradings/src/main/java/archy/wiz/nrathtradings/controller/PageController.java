@@ -39,6 +39,14 @@ public class PageController {
 		return model;
 	}
 	
+	@RequestMapping("/gallery")
+	public ModelAndView gallery() {
+		ModelAndView model = new ModelAndView("page");
+		model.addObject("title","our gallery");
+		model.addObject("userClickProjects",true);
+		return model;
+	}
+	
 	@RequestMapping("/contact")
 	public ModelAndView contact() {
 		ModelAndView model = new ModelAndView("page");
