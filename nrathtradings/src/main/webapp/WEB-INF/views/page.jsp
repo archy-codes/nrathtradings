@@ -14,7 +14,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <title>WELCOME TO NRATH TRADINGS - ${title}</title>
-<link href="${css}/bootstrap.css" rel="stylesheet">
+<link href="${css}/bootstrap.min.css" rel="stylesheet">
 <link href="${css}/myapp.css" rel="stylesheet">
 
 <script>
