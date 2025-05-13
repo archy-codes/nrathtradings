@@ -1,9 +1,13 @@
-<footer class="myFooter">
+<footer class="myFooter border border-top-1">
    <div class="footerMyLogo">
      <img alt="" src="${images}/navbarIcons/logoNrath.png" class="footerLogo" />
    </div>
    <div>
-      <ul>
+      <div>
+        <h4>QUICK LINKS</h4>
+      </div>
+      <div>
+         <ul>
          <li><a href="${contextRoot}/home">HOME</a></li>
          <li><a href="${contextRoot}/home">ABOUT</a></li>
          <li><a href="${contextRoot}/home">SERVICES</a></li>
@@ -11,6 +15,7 @@
          <li><a href="${contextRoot}/home">GALLERY</a></li>
          <li><a href="${contextRoot}/home">CONTACT</a></li>
       </ul>
+      </div>
    </div>
    <div>
      <p>Nrath Trading is a Level One Broad-Based

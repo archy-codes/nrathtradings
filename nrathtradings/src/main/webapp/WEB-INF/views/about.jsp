@@ -113,6 +113,95 @@ PRIVATELY OWNED CONSTRUCTION COMPANIES</p>
 			</div>
 		</div>
 	</div>
-
-
 </div>
+
+
+<section class="objectives">
+   <div>
+      <img alt="" src="${images}/aboutIcons/objectivesBackground.png" class="objectives">
+   </div>
+   <div class="objective-info">   
+       <div>
+            <h4>OBJECTIVES</h4>
+      <p class="text-muted">We have adopted ourselves to a mission statement “services excellence”
+			that is used to measure our performance mission inter alias:
+			• Employment equity will be maintained across all races and
+			gender while aligning with government stance towards
+			empowerment.
+			• Execute all technical challenges 
+			<br/>to provide excellent solutions
+			that will exceed the client’s expectations.
+			• Assisting students by providing financial assistance and exposure.
+			• Empower our staff to become strong technically and be recognized
+			by the professional institutions.
+			• Ensure that the community is treated as the main
+			beneficiary <br/>on allcommunity development-based projects.
+			</p>
+       </div>
+       
+       <div>
+          <h4>OPERATIONAL ACTIVITIES AND CORE BUSINESS</h4>
+          <p class="text-muted">
+             
+				▪ General Building Construction, Supply and Delivery
+				▪ Project cash flow projection and monitoring.
+				▪ Management and Training services
+				▪ Strategic human resources
+				▪ Development Planning
+				▪ Financial Management
+				▪ Performance management system.
+          </p>
+       </div>
+       <div>
+          <h4>SCOPE & COMPETENCE</h4>
+          <p class="text-muted">Projects are undertaken in the private
+				and public sectors with built expertise <br/>
+				in the fields of education, healthcare,
+				judicial, commercial (industrial, business <br> and
+				retail spaces), hospitality and
+				residential, as well as mining, industrial,
+				municipal and government infrastructure,
+				process plants; mining Infrastructure
+				including crushers bases, winder buildings,
+				materials storage and handling facilities,
+				pump stations, water and sewerage
+				infrastructure and specialist civils structures
+				such as railway over- and underpasses.</p>
+           
+       </div>
+       <div>
+         <h4>TRANSFORMATION & FUNCTIONALITY</h4>
+         <p class="text-muted">Nrath Trading is a Level One Broad-Based
+			Black Economic Empowered (BBBEE)
+			Contributor, 100% black-owned, and
+			one of a select group of privatelyowned construction companies graded </p>
+       </div>
+   </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

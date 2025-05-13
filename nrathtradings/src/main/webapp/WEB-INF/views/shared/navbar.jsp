@@ -1,23 +1,30 @@
-<nav class="navbar navbar-inverse navbar-static-top">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed"
-				data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-				aria-controls="navbar">
-				<span class="sr-only">Toggle navigation</span> <span
-					class="icon-bar"></span> <span class="icon-bar"></span> <span
-					class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="#">Project name</a>
-		</div>
-		
-		<div id="navbar" class="navbar-collapse collapse">
-			<ul class="nav navbar-nav">
-				<li class="active"><a href="${contextRoot}/home">HOME</a></li>
-				<li><a href="${contextRoot}/about">ABOUT</a></li>
-				<li><a href="${contextRoot}/services">SERVICES</a></li>
-				<li><a href="${contextRoot}/projects">PROJECTS</a></li>
-				<li><a href="${contextRoot}/gallery">GALLERY</a></li>
-				<li><a href="${contextRoot}/contact">CONTACT</a></li>
-			</ul>
-		</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container-fluid">
+    <!-- ADD LOGO HERE -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="${contextRoot}/about">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="${contextRoot}/services">SERVICES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="${contextRoot}/projects">PROJECTS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="${contextRoot}/download">DOWNLOAD</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="${contextRoot}/contact">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>

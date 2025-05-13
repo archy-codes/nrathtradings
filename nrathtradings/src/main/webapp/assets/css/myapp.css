@@ -17,6 +17,11 @@ p{
 	 width: 100%;
 	 display:grid;
 	 grid-template-columns: repeat(1,12fr);
+	 position: relative;
+	 top: 0;
+	 left: 0;
+	 bottom: 0;
+	 right: 0;
 }
 
 /* CUSTOMIZE THE HOME PAGE
@@ -60,11 +65,47 @@ background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(233, 239, 24
 	justify-content: space-around;
 }
 .about-projects{
-	background: #020024;
-background: #6581db;
-background: radial-gradient(circle, rgba(101, 129, 219, 1) 100%, rgba(252, 70, 107, 1) 100%);
+background: #39addb;
+background: radial-gradient(circle, rgba(57, 173, 219, 1) 0%, rgba(0, 93, 199, 1) 100%);
 	
 }
+
+
+.objectives{
+	display:grid;
+	grid-template-columns:repeat(2,6fr);
+	grid-gap:1%;
+	padding: 25px;
+}
+
+.objectives .objectives{
+	display: grid;
+	width: 100%;
+	
+}
+.objectives .objective-info{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* CUSTOMIZE THE CAROUSEL
@@ -99,6 +140,9 @@ background: radial-gradient(circle, rgba(101, 129, 219, 1) 100%, rgba(252, 70, 1
 
 
 
+
+
+
 /* CUSTOMIZE THE ABOUT US PAGE
 -------------------------------------------------- */
 .home-about{
@@ -121,31 +165,39 @@ background: radial-gradient(circle, rgba(101, 129, 219, 1) 100%, rgba(252, 70, 1
 	grid-template-columns: repeat(1,12fr);
 	width: 100%;
 }
+
 .contact-form-wrapper{
-	display:grid;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-self:center;
 	position: absolute;
-	grid-gap: 5%;
-	grid-template-columns: repeat(1,12fr);
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;	
+}
+.contact-form-wrapper .flex-contact{
+	display: flex;
+	flex-direction: column;
+	width: 65%;
 	background-color: white;
-	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-	top: 25%;
-	padding: 3%;
-	width: 60%;
-}
-.contact-form .form-group .form-control{
-	padding: 22px;
 }
 
-.contact-form-wrapper .contact-form .main-form .form-top{
+.contact-form-wrapper .flex-contact .contact-form .main-form{
 	display: grid;
-	grid-template-columns: repeat(2,6fr);
-	grid-gap: 1em;
+	grid-template-columns:repeat(1,12fr);
+	grid-gap:3%;
+	
 }
-.contact-form-wrapper .contact-form .main-form{
+.contact-form-wrapper .flex-contact .contact-form .main-form  .form-top{
 	display:grid;
-	grid-template-columns: repeat(1,12fr);
+	grid-template-columns:repeat(2,6fr);
+	grid-gap:3%;
 }
-
+.contact-form-wrapper .flex-contact .contact-form .main-form .form-group .form-control{
+	padding: 4%;
+}
 
 /* MY FOOTER
 -------------------------------------------------- */
@@ -156,6 +208,7 @@ background: radial-gradient(circle, rgba(101, 129, 219, 1) 100%, rgba(252, 70, 1
 	padding-top: 40px;
 	padding-bottom: 40px;
 	grid-gap:1%;
+    background:  rgba(205, 205, 206, 0.08);
 }
 .footerMyLogo .footerLogo{
 	width: 100%;
@@ -163,7 +216,7 @@ background: radial-gradient(circle, rgba(101, 129, 219, 1) 100%, rgba(252, 70, 1
 }
 .copyRight{
 	background-color: black;
-	padding: 20px;
+	padding: 10px;
 }
 .copyRight a{
 	color: white;
