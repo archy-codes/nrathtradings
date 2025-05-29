@@ -6,9 +6,9 @@
 	<div class="flex-contact">
 		<div class="form-header">
 			<h1>GET IN TOUCH</h1>
-			<p>LEAVE US A MESSAGE AND WE WILL GET BACK TO YOU.</p>
+			<p class="text-muted">LEAVE US A MESSAGE AND WE WILL GET BACK TO YOU.</p>
 		</div>
-		<div class="contact-form">
+		<div class="contact-form"> 
 			<form action="" class="main-form">
 				<div class="form-top">
 					<div class="form-group"> 

@@ -15,11 +15,11 @@ import org.springframework.orm.hibernate5.LocalSessionFactoryBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
-@ComponentScan(basePackages = {"archy.wiz.nrathtradingsbackend.dto"} )
+@ComponentScan(basePackages = "archy.wiz.nrathtradingsbackend")
 @EnableTransactionManagement
 public class HibernateConfig {
 	
-	private final static String DATABASE_URL = "jdbc:h2:~/nrathtradings";
+	private final static String DATABASE_URL = "jdbc:h2:tcp://localhost/~/NrathCompanyDatabase";
 	private final static String DATABASE_DRIVER = "org.h2.Driver";
 	private final static String DATABASE_DIALECT = "org.hibernate.dialect.H2Dialect";
 	private final static String DATABASE_USERNAME = "sa";
@@ -39,15 +39,15 @@ public class HibernateConfig {
 	public SessionFactory getSessionFactory(DataSource dataSource) {
 		LocalSessionFactoryBuilder sessionFactory = new LocalSessionFactoryBuilder(dataSource);
 		sessionFactory.addProperties(getHibernateProperties());
-		sessionFactory.scanPackages("archy.wiz.nrathtradingsbackend.dto");
+		sessionFactory.scanPackages("archy.wiz.nrathtradingsbackend");
 		return sessionFactory.buildSessionFactory();
 	}
 	
 	private Properties getHibernateProperties() {
 		Properties properties = new Properties();
 		properties.put("hibernate.dialect",DATABASE_DIALECT);
-		properties.put("hibernate.show_sql", true);
-		properties.put("hibernate.format_sql", true);
+		properties.put("hibernate.show_sql", "true");
+		properties.put("hibernate.format_sql", "true");
 		return properties;
 		
 	}

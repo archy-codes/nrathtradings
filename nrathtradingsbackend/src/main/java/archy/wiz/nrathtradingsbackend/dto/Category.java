@@ -15,13 +15,15 @@ public class Category {
 	private String CategoryName;
 	@Column( name = "is_active")
 	private boolean active = true;
+	private String image;
+	@Column(name="userAdmin_id")
 	private int userAdminId;
 	
 	
 	@Override
 	public String toString() {
-		return "Category [id=" + id + ", CategoryName=" + CategoryName + ", active=" + active + ", userAdminId="
-				+ userAdminId + "]";
+		return "Category [id=" + id + ", CategoryName=" + CategoryName + ", active=" + active + ", image=" + image
+				+ ", userAdminId=" + userAdminId + "]";
 	}
 	
 	
@@ -43,12 +45,21 @@ public class Category {
 	public void setActive(boolean active) {
 		this.active = active;
 	}
+	public String getImage() {
+		return image;
+	}
+	public void setImage(String image) {
+		this.image = image;
+	}
 	public int getUserAdminId() {
 		return userAdminId;
 	}
 	public void setUserAdminId(int userAdminId) {
 		this.userAdminId = userAdminId;
 	}
+	
+	
+	
 	
 	
 	

@@ -19,6 +19,7 @@
 
 <script>
 	window.contextRoot = '${title}';
+	window.contextRoot = '${contextRoot}';
 </script>
 
 </head>
@@ -40,6 +41,10 @@
 		 <!-- when the user click services , services page will display -->
          <c:if test="${userClickServices == true }">
             <%@include file="services.jsp" %>
+         </c:if>
+         
+         <c:if test="${userClickSingleServices == true}">
+             <%@include file="singleServices.jsp" %>
          </c:if>
          
           <!-- when the user click projects , projects page will display -->

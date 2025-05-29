@@ -10,7 +10,7 @@ public interface CategoryDAO {
 	Category getCategory(int id);
 	
 	//getting a list of active categories
-	List<Category> getCategory();
+	List<Category> getActiveCategories();
 	
 	//upload a single category
 	boolean addCategory(Category category);

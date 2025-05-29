@@ -13,7 +13,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<jackson.version>2.8.10</jackson.version>
+		<jackson.version>2.8.7</jackson.version>
 		<spring.version>4.3.1.RELEASE</spring.version>
 	</properties>
 
@@ -39,7 +39,6 @@
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
 			<version>1.4.193</version>
-			<scope>test</scope>
 		</dependency>
 
 		<!-- SPRING CORE -->

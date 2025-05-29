@@ -18,7 +18,7 @@
       </div>
    </div>
    <div>
-     <p>Nrath Trading is a Level One Broad-Based
+     <p class="text-muted">Nrath Trading is a Level One Broad-Based
         Black Economic Empowered (BBBEE)
         Contributor, 100% black-owned, and
         one of a select group of privatelyowned 
@@ -30,7 +30,7 @@
      </p>
    </div>
    <div>
-		<p>Projects are undertaken in the private
+		<p class="text-muted">Projects are undertaken in the private
 		and public sectors with built expertise
 		in the fields of education, healthcare,
 		judicial, commercial (industrial, business and

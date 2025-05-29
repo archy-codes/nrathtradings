@@ -4,12 +4,14 @@ import java.util.List;
 
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import archy.wiz.nrathtradingsbackend.dao.CategoryDAO;
 import archy.wiz.nrathtradingsbackend.dto.Category;
 
 @Transactional
+@Repository("categoryDAO")
 public class CategoryDAOimpl implements CategoryDAO {
 	
 	@Autowired
@@ -21,7 +23,7 @@ public class CategoryDAOimpl implements CategoryDAO {
 	}
 
 	@Override
-	public List<Category> getCategory() {
+	public List<Category> getActiveCategories() {
 		String query = "FROM Category WHERE active = :active";
 		return sessionFactory
 				 .getCurrentSession()

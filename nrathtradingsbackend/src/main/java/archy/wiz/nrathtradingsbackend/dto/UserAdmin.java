@@ -6,7 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Entity
+@Entity(name = "UserAdmin")
 public class UserAdmin {
 	
 	@Id
@@ -17,6 +17,7 @@ public class UserAdmin {
 	@Column(name = "is_active")
 	private boolean isActive = true;
 	private String password;
+	
 	public int getId() {
 		return id;
 	}

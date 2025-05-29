@@ -1,11 +1,25 @@
 package archy.wiz.nrathtradings.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import archy.wiz.nrathtradingsbackend.dao.CategoryDAO;
+import archy.wiz.nrathtradingsbackend.dao.CategoryInfoDAO;
+
 @Controller
 public class PageController {
+	
+	@Autowired
+	private CategoryDAO categoryDAO;
+	
+	@Autowired
+	private CategoryInfoDAO categoryInfoDAO;
+	
+
+	
 	
 	@RequestMapping(value = {"/","/home","/index"})
 	public ModelAndView home() {
@@ -28,6 +42,17 @@ public class PageController {
 		ModelAndView model = new ModelAndView("page");
 		model.addObject("title","our services");
 		model.addObject("userClickServices",true);
+		model.addObject("categories",categoryDAO.getActiveCategories());
+		return model;
+	}
+	
+	/*services single page*/
+	@RequestMapping("/show/{categoryId}/category/det")
+	public ModelAndView singlePageServices(@PathVariable int categoryId) {
+		ModelAndView model = new ModelAndView("page");
+		model.addObject("userClickSingleServices",true);
+		model.addObject("categories",categoryDAO.getActiveCategories());
+		model.addObject("categoryInfo", categoryInfoDAO.getActiveCategoryInfoByCategoryInfo(categoryId));
 		return model;
 	}
 	

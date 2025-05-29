@@ -4,10 +4,12 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 @Entity
 public class Projects {
 	
+	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private String clientName;
@@ -17,10 +19,12 @@ public class Projects {
 	private String completionDate;
 	private String refContacts;
 	private String image;
+	@Column(name = "userAdmin_id")
 	private int userAdminId;
 	@Column(name = "is_active")
 	private boolean active = true;
-	private Integer categoryId;
+	@Column(name = "category_id")
+	private int categoryId;
 	
 	
 

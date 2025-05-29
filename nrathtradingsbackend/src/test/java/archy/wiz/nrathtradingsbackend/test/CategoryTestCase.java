@@ -17,7 +17,7 @@ public class CategoryTestCase {
 	
 	
 	@BeforeClass
-	public void init() {
+	public static void init() {
 		context = new AnnotationConfigApplicationContext();
 		context.scan("archy.wiz.nrathtradingsbackend");
 		context.refresh();
@@ -29,28 +29,35 @@ public class CategoryTestCase {
 		
 		category = new Category();
 		category.setCategoryName("CIVIL WORKS");
+		category.setImage("image1.jpg");
 		category.setUserAdminId(1);
 		assertEquals("you have successfully added a category",true,categoryDAO.addCategory(category));
 		
 		category = new Category();
 		category.setCategoryName("GENERAL BUILDING CONSTRUCTION & MAINTANANCE");
+		category.setImage("image2.jpg");
 		category.setUserAdminId(1);
 		assertEquals("you have successfully added a category",true,categoryDAO.addCategory(category));
 		
 		category = new Category();
 		category.setCategoryName("WATER EXPERIENCE");
+		category.setImage("image3.jpg");
 		category.setUserAdminId(1);
 		assertEquals("you have successfully added a category",true,categoryDAO.addCategory(category));
 		
-		category = categoryDAO.getCategory(3);
-		assertEquals("you have successfully fetched a category by its id","WATER EXPERIENCE", category.getCategoryName());
 		
 		category = categoryDAO.getCategory(3);
-		category.setCategoryName("MAINTENANCE");
+		assertEquals("you have successfully fetched a category","WATER EXPERIENCE",category.getCategoryName());
+		
+		category.setCategoryName("updated category");
 		assertEquals("you have successfully updated a category",true,categoryDAO.updateCategory(category));
 		
-		category = categoryDAO.getCategory(3);
 		assertEquals("you have successfully updated a category",true,categoryDAO.deleteCategory(category));
+		
+		assertEquals("you have successfully fetched a list of active categories",2,categoryDAO.getActiveCategories().size());
+		
+		
+		
 		
 		
 	}

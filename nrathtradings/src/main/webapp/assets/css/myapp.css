@@ -23,6 +23,16 @@ p{
 	 bottom: 0;
 	 right: 0;
 }
+/* NAVBAR
+-------------------------------------------------- */
+.navbar .container-fluid .collapse .navbar-nav{
+  display:flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+
 
 /* CUSTOMIZE THE HOME PAGE
 -------------------------------------------------- */
@@ -97,9 +107,20 @@ background: radial-gradient(circle, rgba(57, 173, 219, 1) 0%, rgba(0, 93, 199, 1
 
 
 
+/* SINGLE PAGE MULTI
+-------------------------------------------------- */
 
-
-
+.wrapper-multiPage{
+	display:grid;
+	grid-template-columns: 4fr 8fr;
+	padding: 40px;
+	grid-gap:20px;
+	position: relative;
+	top:0;
+	left:0;
+	right: 0;
+	bottom: 0;
+}
 
 
 
@@ -135,20 +156,51 @@ background: radial-gradient(circle, rgba(57, 173, 219, 1) 0%, rgba(0, 93, 199, 1
 }
 
 
+/* OUR SERVICES PAGE
+-------------------------------------------------- */
+.wrapper-services{
+	display:grid;
+	grid-template-columns: repeat(3, 4fr);
+	grid-gap:20px;
+	justify-content: space-around;
+	padding: 80px;
+}
+.wrapper-services .card .card-footer a{
+	text-decoration: none;
+}
+.wrapper-services .card .card-header .servicesImages{
+	width: 100%;
+}
 
-
-
-
-
-
-
+.services-header .headerServicesImg .coverServicesHeader{
+	width: 100%;
+}
+.services-header{
+	display: grid;
+	grid-template-columns:repeat(1,12fr);
+	position: relative;
+}
+.services-header .servicesHeading{ 
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	display: grid;
+	align-items: center;
+	justify-items:center;
+	
+}
+.services-header .servicesHeading .servicesMidDiv p a{
+	text-decoration: none;
+}
 
 /* CUSTOMIZE THE ABOUT US PAGE
 -------------------------------------------------- */
 .home-about{
 	display:grid;
 	grid-template-columns: 6fr 6fr;
-	padding-top:20px;
+	padding-top:10px;
 
 	grid-gap:3%;
 }
@@ -159,45 +211,37 @@ background: radial-gradient(circle, rgba(57, 173, 219, 1) 0%, rgba(0, 93, 199, 1
 
 /* CONTACT US PAGE
 -------------------------------------------------- */
-
 .contact-background .contactCover{
+	width: 100%
+}
+.contact-form-wrapper{
 	display:grid;
-	grid-template-columns: repeat(1,12fr);
+	position: absolute;
+	align-items:center;
+	justify-items:center;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 	width: 100%;
 }
-
-.contact-form-wrapper{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-self:center;
-	position: absolute;
-	top:0;
-	left:0;
-	right:0;
-	bottom:0;	
-}
 .contact-form-wrapper .flex-contact{
-	display: flex;
-	flex-direction: column;
-	width: 65%;
-	background-color: white;
+	background-color: rgba(247,248,250);
+	width: 50%;
+	padding: 40px;
 }
-
-.contact-form-wrapper .flex-contact .contact-form .main-form{
-	display: grid;
-	grid-template-columns:repeat(1,12fr);
-	grid-gap:3%;
+ .contact-form-wrapper .flex-contact .contact-form .main-form { 
+	display:grid;
+	grid-template-columns: repeat(1,12fr);
+	grid-gap:20px;
 	
 }
-.contact-form-wrapper .flex-contact .contact-form .main-form  .form-top{
-	display:grid;
-	grid-template-columns:repeat(2,6fr);
-	grid-gap:3%;
+.contact-form-wrapper .flex-contact .contact-form .main-form .form-top{
+	 display:grid;
+	 grid-template-columns:repeat(2,6fr);
+	 grid-gap:20px;
 }
-.contact-form-wrapper .flex-contact .contact-form .main-form .form-group .form-control{
-	padding: 4%;
-}
+
 
 /* MY FOOTER
 -------------------------------------------------- */
